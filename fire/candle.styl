@@ -1,0 +1,50 @@
+$count = 200
+
+html, body
+  height 100%
+  background-color #000000
+  overflow hidden
+
+.g-candle
+  position absolute
+  width 400px
+  height 400px
+  .g-body
+    position relative
+    width 100px
+    height 300px
+    margin 280px auto
+    z-index 1
+    background linear-gradient(230deg,#ca9800, #573903, black 70%)
+    &:before
+      position absolute
+      content ""
+      width 100px
+      height 40px
+      border-radius 50%
+      top -20px
+      background radial-gradient(#a46800, #5c3104 45%, #905602 100%);
+    &:after
+      position absolute
+      content ""
+      width 4px
+      height 48px
+      background #fff
+      left 50%
+      top -22px
+      transform translate(-%50,-%50)
+      border-radius 50% 50% 0 0
+      background linear-gradient(180deg,rgba(0,0,0,.3) 0%,rgba(0,0,0,.8) 60%,#fff)
+    //   虚化，使之不那么明显
+      opacity .7
+      filter blur(1px)
+      .g-fire-box
+          position absolute
+          top 97px
+          left 50%
+          width 80px
+          height 200px
+          transform translate(-50%,-50%)
+          filter blur(2px)
+
+      

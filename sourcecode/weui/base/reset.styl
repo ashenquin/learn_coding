@@ -1,0 +1,22 @@
+@import "fn"
+
+html
+    // 禁止主动调整文字大小
+    -mx-text-size-adjust 100%
+    -webkit-text-size-adjust 100%
+
+body 
+    line-height 1.6
+    font-family $weuiFontDefault
+
+*
+    margin 0
+    padding 0
+
+a img 
+    border 0
+
+a 
+    text-decoration none
+    // 点击上去高亮颜色属性有兼容，用函数完成
+    setTapColor()
