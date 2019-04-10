@@ -4,4 +4,3 @@ function findShort(str){
 }
 
 console.log(findShort('jadfl djklfa sdjkfalj dfjlkakdfjaldjf'));
-// console.log('dsafasdfasdf dfasf fdaf fdafasd'.split(' '));
