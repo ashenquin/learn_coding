@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="userinfo">
+    <button bindtap="showPopup">点我</button>
+  </view>
+  <popup id="popup" title="小弹窗" content="组件思想是现在前端编程的主要思想，学会了吗？"
+  btn_no="没有" btn_ok="学会了"
+  bind:error="_error" bind:success="_success"></popup>
+
+  <test catch:tap="onTextChange" id="myComponent"></test>
+  <test catch:tap="onTextChange" id="myComponentt"></test>
+  <button catch:tap="change">点击改变文字内容</button>
+</view>
